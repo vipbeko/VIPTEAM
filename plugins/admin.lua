@@ -5,7 +5,7 @@
 ▀▄ ▄▀                                 ▀▄ ▄▀ 
 ▀▄ ▄▀   File name : ( admin    )    ▀▄ ▄▀ 
 ▀▄ ▄▀                                 ▀▄ ▄▀ 
-▀▄ ▄▀  Guenat team: ( @VIP_TEAM1  )   ▀▄ ▄▀ 
+▀▄ ▄▀  Guenat team: ( @DEV_VIP_TEAM  )   ▀▄ ▄▀ 
 ▀▄ ▄▀                                 ▀▄ ▄▀ 
 ▀▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄ 
 —]]
@@ -264,82 +264,4 @@ end
     	local SEED_gbans = http.request(url)
     	local jdat = json:decode(SEED_gbans)
     	for k,v in pairs(jdat) do
-			redis:hset('user:'..v, 'print_name', k)
-			banall_user(v)
-      		print(k, v.." Globally banned")
-    	end
-    end
-	if matches[1] == 'reload' then
-		receiver = get_receiver(msg)
-		reload_plugins(true)
-		post_msg(receiver, "Reloaded!", ok_cb, false)
-		return "Reloaded!"
-	end
-	--[[*For Debug*
-	if matches[1] == "vardumpmsg" and is_admin1(msg) then
-		local text = serpent.block(msg, {comment=false})
-		send_large_msg("channel#id"..msg.to.id, text)
-	end]]
-	if matches[1] == 'updateid' then
-		local data = load_data(_config.moderation.data)
-		local long_id = data[tostring(msg.to.id)]['long_id']
-		if not long_id then
-			data[tostring(msg.to.id)]['long_id'] = msg.to.peer_id 
-			save_data(_config.moderation.data, data)
-			return "Updated ID"
-		end
-	end
-	if matches[1] == 'addlog' and not matches[2] then
-		if is_log_group(msg) then
-			return "Already a Log_SuperGroup"
-		end
-		print("Log_SuperGroup "..msg.to.title.."("..msg.to.id..") added")
-		savelog(msg.to.id, name_log.." ["..msg.from.id.."] added Log_SuperGroup")
-		logadd(msg)
-	end
-	if matches[1] == 'remlog' and not matches[2] then
-		if not is_log_group(msg) then
-			return "Not a Log_SuperGroup"
-		end
-		print("Log_SuperGroup "..msg.to.title.."("..msg.to.id..") removed")
-		savelog(msg.to.id, name_log.." ["..msg.from.id.."] added Log_SuperGroup")
-		logrem(msg)
-	end
-    return
-end
-
-local function pre_process(msg)
-  if not msg.text and msg.media then
-    msg.text = '['..msg.media.type..']'
-  end
-  return msg
-end
-
-return {
-  patterns = {
-	"^[#!/](pm) (%d+) (.*)$",
-	"^[#!/](import) (.*)$",
-	"^[#!/](pmunblock) (%d+)$",
-	"^[#!/](pmblock) (%d+)$",
-	"^[#!/](markread) (on)$",
-	"^[#!/](markread) (off)$",
-	"^[#!/](setbotphoto)$",
-	"^[#!/](contactlist)$",
-	"^[#!/](dialoglist)$",
-	"^[#!/](delcontact) (%d+)$",
-	"^[#!/](addcontact) (.*) (.*) (.*)$", 
-	"^[#!/](sendcontact) (.*) (.*) (.*)$",
-	"^[#!/](mycontact)$",
-	"^[#/!](reload)$",
-	"^[#/!](updateid)$",
-	"^[#/!](sync_gbans)$",
-	"^[#/!](addlog)$",
-	"^[#/!](remlog)$",
-	"%[(photo)%]",
-  },
-  run = run,
-  pre_process = pre_process
-}
---By @imandaneshi :)
---https://github.com/SEEDTEAM/TeleSeed/blob/test/plugins/admin.lua
----Modified by @Rondoozle for supergroups
+			redis:hset(
