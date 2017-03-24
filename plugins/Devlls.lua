@@ -6,19 +6,14 @@ function run(msg, matches)
 
 🎗للتحدث مع المطورين راسل احدهم🎗
 
-🎗 1. @XxX_TEAM_XxX 
+🎗 1. @MAX_HP85
  
 🎗2. @i_d_b 
   
-🎗3. @lIlDevlIl
+🎗3. @ABOD_EVO
  
-🎗4. @A_6_Q
-
-🎗7. @mustafa_dev
-
-🎗6. @Virus_x
 ▫️➖▫️➖▫️➖▫️➖▫️➖▫️
-تابع قناة السورس لتطوير بوتك @VIP_TEAm1
+تابع قناة السورس لتطوير بوتك @DEV_VIP_TEAM
 ]]
 end
 
