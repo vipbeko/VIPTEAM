@@ -16,7 +16,7 @@ local function vipteam1(msg,matches)
     ..'⚜ألضأفہكہ🆔: '..msg.from.id..'\n'
     ..'⚜رقہمہ أليہ ضأفہكہ🔰 : '..(msg.from.phone or "Not")..'\n'
     ..'🔻➖🔺➖🔻➖🔺➖🔻'..'\n'
-    ..'🌐 Chaneel :@vip_team1'..'\n'
+    ..'🌐 Chaneel :@DEV_VIP_TEAM'..'\n'
         return reply_msg(msg.id, vipteam, ok_cb, false)
   end
   if matches[1] == "chat_add_user_link" then
@@ -29,7 +29,7 @@ local function vipteam1(msg,matches)
     ..'⚜أسہمہ ألكہروبہ🔰:  '..msg.to.title..'\n'
     ..'⚜🆔 : '..msg.to.id..'\n'
     ..'🔻➖🔺➖🔻➖🔺➖🔻'..'\n'
-    ..'🌐 Chaneel : @vip_team1'..'\n'
+    ..'🌐 Chaneel : @DEV_VIP_TEAM'..'\n'
         return reply_msg(msg.id, vipteam1, ok_cb, false)
     end
      if matches[1] == "chat_del_user"  then 
@@ -43,6 +43,6 @@ return {
         "^!!tgservice (chat_add_user_link)$",
         "^!!tgservice (chat_del_user)$",
     },
- run = vipteam1
+ run = DEV_VIP_TEAM
 }
 end
