@@ -5,7 +5,7 @@
 ▀▄ ▄▀                                 ▀▄ ▄▀ 
 ▀▄ ▄▀   File name : ( اسم الملف     )    ▀▄ ▄▀ 
 ▀▄ ▄▀                                 ▀▄ ▄▀ 
-▀▄ ▄▀  Guenat team: ( @VIP_TEAM1  )   ▀▄ ▄▀ 
+▀▄ ▄▀  Guenat team: ( @DEV_VIP_TEAM  )   ▀▄ ▄▀ 
 ▀▄ ▄▀                                 ▀▄ ▄▀ 
 ▀▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄ 
 —]]
@@ -16,20 +16,18 @@ function run(msg, matches)
 اهــلا بـكـم فـي سـورس 
                                                     🎗VIP🏅TEAM🎗
 
-🎗الاصـدار🏅الانـكـلـيـزي {2}🔹
+🎗الاصـدار🏅الاخير {2}🔹
 
 🎗للتحدث مع المطورين راسل احدهم👇🏻
 
-🎗 1. @XxX_TEAM_XxX 
+🎗 1. @MAX_HP85
 🎗2. @i_d_b 
-🎗3. @lIlDevlIl
-🎗4. @A_6_Q
-🎗5. @mustafa_dev
+🎗3. @ABOD_EVO
 ▫️➖▫️➖▫️➖▫️➖▫️➖▫️
 
 🎗تـابـع قـنـاة الـسـورس لـتطـويـر بـوتـك 🏅👇🏻
 
-https://telegram.me/VIP_TEAM1
+https://telegram.me/DEV_VIP_TEAM
 ]]
 end
 
